@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đơn giản</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div>
+    <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+       <h2>Sở thích của bạn</h2>
+        <div class="name"> Họ và tên
+            <input type="text"name="yourname"><br>
+        </div>
+        <div class="email">Email
+            <input type="text"name="email">
+        </div>
+        <div id="sothich">Sở thích
+          <div class="sothich">
+               <input type="Checkbox" name="hobby"> Thể thao
+            <input type="Checkbox" name="hobby"> Âm nhạc
+            <input type="Checkbox" name="hobby"> Đọc sách
+            <input type="Checkbox" name="hobby"> Lướt wed
+            <input type="Checkbox" name="hobby"> Chơi game
+            <input type="Checkbox" name="hobby"> Điện ảnh
+            <input type="Checkbox" name="hobby"> Du lịch
+          </div>
+        </div>
+        <input type="submit"name="submit"value="Gửi thông tin">
+        <input type="reset"name="reset" value="Nhập lại">
+    </form>
+</div>
+<div id="dangky">
+    <h3>ĐĂNG KÝ HỌC VIÊN</h3>
+    <div class="hoten">Họ và tên
+        <input type="text"name="yourname"><br>
+        Ngày sinh
+        <input type="text" name="date"><br>
+        Giới tính
+        <input type="checkbox"name="general">Nam
+        <input type="checkbox"name="general">Nữ
+
+    </div>
+    <div>Địa chỉ
+        <textarea name="dress" id="dress" cols="30" rows="10"></textarea></div>
+    <div>Lớp
+        <select>
+            <option value="select">--Chọn lớp--</option>
+            <option value="java">Java</option>
+            <option value="Js">JavaScript</option>
+            <option value="NodeJS">NodeJS</option>
+        </select>
+    </div>
+    Email
+    <input type="text"name="email"><br>
+    Điện thoại
+    <input type="text"name="phone"><br>
+    <input type="submit"value="Đăng ký">
+    <input type="reset"value="Nhập lại">
+</div>
+
+</body>
+</html>
