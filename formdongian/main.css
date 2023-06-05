@@ -1,9 +1,15 @@
 * {
-    font-family: Arial;
+
 
 }
-h2 {
-    background: orangered;
-    color: aliceblue;
+#titlle {
+    text-align: center;
+    background-color: orangered;
+    color: #ffffff;
+
+}
+table {
     text-align: center;
 }
+
+
