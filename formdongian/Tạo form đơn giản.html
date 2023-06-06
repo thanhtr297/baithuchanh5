@@ -2,62 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tạo form đơn giản</title>
-    <link rel="stylesheet" href="main.css">
+    <title> Tạo form đơn giản </title>
+    <style>
+        h1 {
+            background-color: orangered;
+            color: #ffffff;
+            font-size: 30px;
+        }
+
+        .one {
+            text-align: right;
+            color: blue;
+        }
+
+        .two {
+            text-align: left;
+            color: orange;
+        }
+
+        .three {
+            box-shadow: #5f6062;
+        }
+
+        #form_1 {
+            background-color: aqua;
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 350px;
+            height: 320px;
+            padding: 10px;
+        }
+
+        table {
+            background-color: white;
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 350px;
+            height: 300px;
+        }
+    </style>
 </head>
-<body>
-<div>
-    <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
-       <div id="titlle"> Sở thích của bạn</div>
-        <div class="name"> Họ và tên
-            <input type="text"name="yourname"><br>
-        </div>
-        <div class="email">Email
-            <input type="text"name="email">
-        </div>
-        <div id="sothich">Sở thích
-          <div class="sothich">
-               <input type="Checkbox" name="hobby"> Thể thao
-            <input type="Checkbox" name="hobby"> Âm nhạc
-            <input type="Checkbox" name="hobby"> Đọc sách
-            <input type="Checkbox" name="hobby"> Lướt wed
-            <input type="Checkbox" name="hobby"> Chơi game
-            <input type="Checkbox" name="hobby"> Điện ảnh
-            <input type="Checkbox" name="hobby"> Du lịch
-          </div>
-        </div>
-        <input type="submit"name="submit"value="Gửi thông tin">
-        <input type="reset"name="reset" value="Nhập lại">
-    </form>
-</div>
-<div id="dangky">
-    <h3>ĐĂNG KÝ HỌC VIÊN</h3>
-    <div class="hoten">Họ và tên
-        <input type="text"name="yourname"><br>
-        Ngày sinh
-        <input type="text" name="date"><br>
-        Giới tính
-        <input type="checkbox"name="general">Nam
-        <input type="checkbox"name="general">Nữ
 
-    </div>
-    <div>Địa chỉ
-        <textarea name="dress" id="dress" cols="30" rows="10"></textarea></div>
-    <div>Lớp
-        <select>
-            <option value="select">--Chọn lớp--</option>
-            <option value="java">Java</option>
-            <option value="Js">JavaScript</option>
-            <option value="NodeJS">NodeJS</option>
-        </select>
-    </div>
-    Email
-    <input type="text"name="email"><br>
-    Điện thoại
-    <input type="text"name="phone"><br>
-    <input type="submit"value="Đăng ký">
-    <input type="reset"value="Nhập lại">
-</div>
+<form id="form_1">
+    <table>
+        <tr>
+            <th colspan="4"><h1>SỞ THÍCH CỦA BẠN</h1></th>
 
-</body>
+        </tr>
+        <tr>
+            <td class="one">
+                Họ và tên
+            </td>
+            <td colspan="3"><input type="text" name="name" size="30px"></td>
+        </tr>
+        <tr>
+            <td class="one">Email</td>
+            <td colspan="3"><input type="text" name="email"></td>
+
+        </tr>
+        <tr>
+            <td class="one">Sở thích</td>
+            <td class="two">
+                <input type="checkbox">Thể thao
+            </td>
+            <td class="two"><input type="checkbox">Âm nhạc</td>
+            <td class="two"><input type="checkbox">Đọc sách</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="two"><input type="checkbox">Lướt wed</td>
+            <td class="two"><input type="checkbox">Chơi game</td>
+            <td class="two"><input type="checkbox">Điện ảnh</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="two"><input type="checkbox">Du lịch</td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td class="three">
+
+                <input type="submit" name="send" value="Gửi thông tin">
+
+            </td>
+            <td class="three">
+
+                <input type="submit" name="reset" value="Nhập lại">
+
+            </td>
+            <th></th>
+        </tr>
+    </table>
+</form>
+<br><br>
+
+<form id="form_2">
+    <table BORDER="1">
+        <tr>
+            <td colspan="3"><h2>ĐĂNG KÝ HỌC VIÊN</h2></td>
+
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" name="name"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td><input type="text" name="Ngày sinh"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td><input type="radio" name="gender" value="Male">Nam
+                <input type="radio" name="gender" value="Female">Nữ
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+
+
+
 </html>
